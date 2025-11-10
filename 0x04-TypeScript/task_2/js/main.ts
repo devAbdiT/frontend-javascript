@@ -57,7 +57,7 @@ console.log(createEmployee(1000)); // Director instance
 console.log(createEmployee("$500")); // Director instance
 
 // Type predicate function to check if employee is a Director
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
 
